@@ -19,7 +19,7 @@
     // Do any additional setup after loading the view.
     self.navigationBar.barTintColor = DEFAULT_TABBAR_COLOR;
     self.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:[UIColor whiteColor]};
-    self.navigationBar.translucent = NO;
+//    self.navigationBar.translucent = NO;
 }
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {

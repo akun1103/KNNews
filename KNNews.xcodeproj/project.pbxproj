@@ -21,6 +21,7 @@
 		AAC2EA021CDAFFB8003E0EC9 /* KNNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC2EA011CDAFFB8003E0EC9 /* KNNewsViewController.m */; };
 		AAC2EA051CDAFFCF003E0EC9 /* KNPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC2EA041CDAFFCF003E0EC9 /* KNPictureViewController.m */; };
 		AAC2EA081CDAFFE1003E0EC9 /* KNVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC2EA071CDAFFE1003E0EC9 /* KNVideoViewController.m */; };
+		AAC2EA0B1CDB24D5003E0EC9 /* KNTopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC2EA0A1CDB24D5003E0EC9 /* KNTopMenuView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,8 @@
 		AAC2EA041CDAFFCF003E0EC9 /* KNPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNPictureViewController.m; sourceTree = "<group>"; };
 		AAC2EA061CDAFFE1003E0EC9 /* KNVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNVideoViewController.h; sourceTree = "<group>"; };
 		AAC2EA071CDAFFE1003E0EC9 /* KNVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNVideoViewController.m; sourceTree = "<group>"; };
+		AAC2EA091CDB24D5003E0EC9 /* KNTopMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNTopMenuView.h; sourceTree = "<group>"; };
+		AAC2EA0A1CDB24D5003E0EC9 /* KNTopMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNTopMenuView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +168,8 @@
 		AAC2E9EA1CDAEF93003E0EC9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AAC2EA091CDB24D5003E0EC9 /* KNTopMenuView.h */,
+				AAC2EA0A1CDB24D5003E0EC9 /* KNTopMenuView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -283,6 +288,7 @@
 				AAC2EA021CDAFFB8003E0EC9 /* KNNewsViewController.m in Sources */,
 				AAC2EA051CDAFFCF003E0EC9 /* KNPictureViewController.m in Sources */,
 				AAC2E9ED1CDAEF93003E0EC9 /* UIImage+TL.m in Sources */,
+				AAC2EA0B1CDB24D5003E0EC9 /* KNTopMenuView.m in Sources */,
 				AAC2E9EE1CDAEF93003E0EC9 /* UIView+TL.m in Sources */,
 				AAC2EA081CDAFFE1003E0EC9 /* KNVideoViewController.m in Sources */,
 				AAC2E9C61CDAEAE9003E0EC9 /* main.m in Sources */,
