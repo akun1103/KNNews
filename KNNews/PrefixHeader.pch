@@ -1,0 +1,39 @@
+//
+//  PrefixHeader.pch
+//  XLinkIn
+//
+//  Created by Kevin Yin on 4/3/16.
+//  Copyright © 2016 Kevin Yin. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#pragma mark - Frame
+#define WIDTH_SCREEN        [UIScreen mainScreen].bounds.size.width
+#define HEIGHT_SCREEN       [UIScreen mainScreen].bounds.size.height
+
+#pragma mark - Color
+#define DEFAULT_TABBAR_COLOR            [UIColor colorWithRed:240.0/255.0 green:30.0/255.0  blue:50.0/255.0 alpha:1.0]
+#define DEFAULT_LINE_GRAY_COLOR         [UIColor colorWithRed:188.0/255 green:188.0/255  blue:188.0/255 alpha:0.8f]
+#define DEFAULT_TEXT_GRAY_COLOR         [UIColor grayColor]
+#define DEFAULT_BACKGROUND_COLOR        [UIColor colorWithRed:240.0/255.0 green:240.0/255.0 blue:240.0/255.0 alpha:1.0]
+
+/** NSLog 输出宏*/
+#ifdef DEBUG
+#define NSLog(FORMAT, ...) fprintf(stderr,"%s:%d\t%s\n",[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#else
+#define NSLog(...)
+#endif
+
+
+#pragma mark - Category
+#import "NSString+TL.h"
+#import "UIDevice+TL.h"
+#import "UIImage+TL.h"
+#import "UIView+TL.h"
+
+#endif /* PrefixHeader_pch */
