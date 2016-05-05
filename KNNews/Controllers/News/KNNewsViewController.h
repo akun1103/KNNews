@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  KNNewsViewController.h
 //  KNNews
 //
 //  Created by emper on 16/5/5.
 //  Copyright © 2016年 Kevin. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "KNViewController.h"
 
-@interface ViewController : UIViewController
-
+@interface KNNewsViewController : KNViewController
 
 @end
-
