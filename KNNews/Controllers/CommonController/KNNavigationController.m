@@ -18,8 +18,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.navigationBar.barTintColor = DEFAULT_TABBAR_COLOR;
+    self.navigationBar.tintColor = [UIColor whiteColor];
     self.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:[UIColor whiteColor]};
-//    self.navigationBar.translucent = NO;
+    //设置navigationBar的半透明
+    self.navigationBar.translucent = NO;
 }
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {

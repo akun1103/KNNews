@@ -1,23 +1,22 @@
 //
-//  KNViewController.m
+//  KNNewsDetailViewController.m
 //  KNNews
 //
-//  Created by emper on 16/5/5.
+//  Created by emper on 16/5/6.
 //  Copyright © 2016年 Kevin. All rights reserved.
 //
 
-#import "KNViewController.h"
+#import "KNNewsDetailViewController.h"
 
-@interface KNViewController ()
+@interface KNNewsDetailViewController ()
 
 @end
 
-@implementation KNViewController
+@implementation KNNewsDetailViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.backgroundColor = [UIColor whiteColor];
 }
 
 - (void)didReceiveMemoryWarning {

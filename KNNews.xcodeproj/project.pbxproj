@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA3DCD301CDC32CD0012CF39 /* KNNewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3DCD2F1CDC32CD0012CF39 /* KNNewsTableViewController.m */; };
+		AA3DCD3D1CDC34470012CF39 /* KNHeaderNews.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3DCD3C1CDC34470012CF39 /* KNHeaderNews.m */; };
+		AA3DCD401CDC346B0012CF39 /* KNNormalNews.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3DCD3F1CDC346B0012CF39 /* KNNormalNews.m */; };
+		AA3DCD461CDC43790012CF39 /* KNNewsDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3DCD451CDC43790012CF39 /* KNNewsDetailViewController.m */; };
+		AA3DCD491CDC6A4F0012CF39 /* KNChannelCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3DCD481CDC6A4F0012CF39 /* KNChannelCollectionViewCell.m */; };
+		AA3DCD4C1CDC6A6C0012CF39 /* KNTopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3DCD4B1CDC6A6C0012CF39 /* KNTopMenuView.m */; };
 		AAC2E9C61CDAEAE9003E0EC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC2E9C51CDAEAE9003E0EC9 /* main.m */; };
 		AAC2E9C91CDAEAE9003E0EC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC2E9C81CDAEAE9003E0EC9 /* AppDelegate.m */; };
 		AAC2E9EB1CDAEF93003E0EC9 /* NSString+TL.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC2E9DD1CDAEF93003E0EC9 /* NSString+TL.m */; };
@@ -21,10 +27,21 @@
 		AAC2EA021CDAFFB8003E0EC9 /* KNNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC2EA011CDAFFB8003E0EC9 /* KNNewsViewController.m */; };
 		AAC2EA051CDAFFCF003E0EC9 /* KNPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC2EA041CDAFFCF003E0EC9 /* KNPictureViewController.m */; };
 		AAC2EA081CDAFFE1003E0EC9 /* KNVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC2EA071CDAFFE1003E0EC9 /* KNVideoViewController.m */; };
-		AAC2EA0B1CDB24D5003E0EC9 /* KNTopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC2EA0A1CDB24D5003E0EC9 /* KNTopMenuView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AA3DCD2E1CDC32CD0012CF39 /* KNNewsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNNewsTableViewController.h; sourceTree = "<group>"; };
+		AA3DCD2F1CDC32CD0012CF39 /* KNNewsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNNewsTableViewController.m; sourceTree = "<group>"; };
+		AA3DCD3B1CDC34470012CF39 /* KNHeaderNews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNHeaderNews.h; sourceTree = "<group>"; };
+		AA3DCD3C1CDC34470012CF39 /* KNHeaderNews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNHeaderNews.m; sourceTree = "<group>"; };
+		AA3DCD3E1CDC346B0012CF39 /* KNNormalNews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNNormalNews.h; sourceTree = "<group>"; };
+		AA3DCD3F1CDC346B0012CF39 /* KNNormalNews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNNormalNews.m; sourceTree = "<group>"; };
+		AA3DCD441CDC43790012CF39 /* KNNewsDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNNewsDetailViewController.h; sourceTree = "<group>"; };
+		AA3DCD451CDC43790012CF39 /* KNNewsDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNNewsDetailViewController.m; sourceTree = "<group>"; };
+		AA3DCD471CDC6A4F0012CF39 /* KNChannelCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNChannelCollectionViewCell.h; sourceTree = "<group>"; };
+		AA3DCD481CDC6A4F0012CF39 /* KNChannelCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNChannelCollectionViewCell.m; sourceTree = "<group>"; };
+		AA3DCD4A1CDC6A6C0012CF39 /* KNTopMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNTopMenuView.h; sourceTree = "<group>"; };
+		AA3DCD4B1CDC6A6C0012CF39 /* KNTopMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNTopMenuView.m; sourceTree = "<group>"; };
 		AAC2E9C11CDAEAE9003E0EC9 /* KNNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KNNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAC2E9C51CDAEAE9003E0EC9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AAC2E9C71CDAEAE9003E0EC9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -54,8 +71,6 @@
 		AAC2EA041CDAFFCF003E0EC9 /* KNPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNPictureViewController.m; sourceTree = "<group>"; };
 		AAC2EA061CDAFFE1003E0EC9 /* KNVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNVideoViewController.h; sourceTree = "<group>"; };
 		AAC2EA071CDAFFE1003E0EC9 /* KNVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNVideoViewController.m; sourceTree = "<group>"; };
-		AAC2EA091CDB24D5003E0EC9 /* KNTopMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNTopMenuView.h; sourceTree = "<group>"; };
-		AAC2EA0A1CDB24D5003E0EC9 /* KNTopMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNTopMenuView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +84,84 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA3DCD311CDC33E10012CF39 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		AA3DCD321CDC33E10012CF39 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				AA3DCD3B1CDC34470012CF39 /* KNHeaderNews.h */,
+				AA3DCD3C1CDC34470012CF39 /* KNHeaderNews.m */,
+				AA3DCD3E1CDC346B0012CF39 /* KNNormalNews.h */,
+				AA3DCD3F1CDC346B0012CF39 /* KNNormalNews.m */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		AA3DCD331CDC33E10012CF39 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		AA3DCD341CDC33E10012CF39 /* Picture */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Picture;
+			sourceTree = "<group>";
+		};
+		AA3DCD351CDC33E10012CF39 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		AA3DCD361CDC33F90012CF39 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		AA3DCD371CDC33F90012CF39 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				AA3DCD4A1CDC6A6C0012CF39 /* KNTopMenuView.h */,
+				AA3DCD4B1CDC6A6C0012CF39 /* KNTopMenuView.m */,
+				AA3DCD471CDC6A4F0012CF39 /* KNChannelCollectionViewCell.h */,
+				AA3DCD481CDC6A4F0012CF39 /* KNChannelCollectionViewCell.m */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		AA3DCD381CDC33F90012CF39 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		AA3DCD391CDC33F90012CF39 /* Picture */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Picture;
+			sourceTree = "<group>";
+		};
+		AA3DCD3A1CDC33F90012CF39 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
 		AAC2E9B81CDAEAE9003E0EC9 = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +246,11 @@
 		AAC2E9E61CDAEF93003E0EC9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AA3DCD311CDC33E10012CF39 /* Me */,
+				AA3DCD321CDC33E10012CF39 /* News */,
+				AA3DCD331CDC33E10012CF39 /* Other */,
+				AA3DCD341CDC33E10012CF39 /* Picture */,
+				AA3DCD351CDC33E10012CF39 /* Video */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -168,8 +266,11 @@
 		AAC2E9EA1CDAEF93003E0EC9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AAC2EA091CDB24D5003E0EC9 /* KNTopMenuView.h */,
-				AAC2EA0A1CDB24D5003E0EC9 /* KNTopMenuView.m */,
+				AA3DCD361CDC33F90012CF39 /* Me */,
+				AA3DCD371CDC33F90012CF39 /* News */,
+				AA3DCD381CDC33F90012CF39 /* Other */,
+				AA3DCD391CDC33F90012CF39 /* Picture */,
+				AA3DCD3A1CDC33F90012CF39 /* Video */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -188,6 +289,10 @@
 			children = (
 				AAC2EA001CDAFFB8003E0EC9 /* KNNewsViewController.h */,
 				AAC2EA011CDAFFB8003E0EC9 /* KNNewsViewController.m */,
+				AA3DCD2E1CDC32CD0012CF39 /* KNNewsTableViewController.h */,
+				AA3DCD2F1CDC32CD0012CF39 /* KNNewsTableViewController.m */,
+				AA3DCD441CDC43790012CF39 /* KNNewsDetailViewController.h */,
+				AA3DCD451CDC43790012CF39 /* KNNewsDetailViewController.m */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -278,17 +383,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA3DCD491CDC6A4F0012CF39 /* KNChannelCollectionViewCell.m in Sources */,
 				AAC2E9F51CDAF13B003E0EC9 /* KNTabBarController.m in Sources */,
+				AA3DCD401CDC346B0012CF39 /* KNNormalNews.m in Sources */,
 				AAC2E9C91CDAEAE9003E0EC9 /* AppDelegate.m in Sources */,
 				AAC2E9EC1CDAEF93003E0EC9 /* UIDevice+TL.m in Sources */,
+				AA3DCD301CDC32CD0012CF39 /* KNNewsTableViewController.m in Sources */,
+				AA3DCD4C1CDC6A6C0012CF39 /* KNTopMenuView.m in Sources */,
 				AAC2E9EB1CDAEF93003E0EC9 /* NSString+TL.m in Sources */,
 				AAC2E9F81CDAF162003E0EC9 /* KNNavigationController.m in Sources */,
+				AA3DCD461CDC43790012CF39 /* KNNewsDetailViewController.m in Sources */,
 				AAC2E9FF1CDAFF9F003E0EC9 /* KNMeViewController.m in Sources */,
 				AAC2E9F21CDAF111003E0EC9 /* KNViewController.m in Sources */,
+				AA3DCD3D1CDC34470012CF39 /* KNHeaderNews.m in Sources */,
 				AAC2EA021CDAFFB8003E0EC9 /* KNNewsViewController.m in Sources */,
 				AAC2EA051CDAFFCF003E0EC9 /* KNPictureViewController.m in Sources */,
 				AAC2E9ED1CDAEF93003E0EC9 /* UIImage+TL.m in Sources */,
-				AAC2EA0B1CDB24D5003E0EC9 /* KNTopMenuView.m in Sources */,
 				AAC2E9EE1CDAEF93003E0EC9 /* UIView+TL.m in Sources */,
 				AAC2EA081CDAFFE1003E0EC9 /* KNVideoViewController.m in Sources */,
 				AAC2E9C61CDAEAE9003E0EC9 /* main.m in Sources */,

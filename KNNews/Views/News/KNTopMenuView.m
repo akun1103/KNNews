@@ -11,7 +11,7 @@
 #define addChannelButtonWidth 30
 #define sliderViewWidth 20
 #define tittleNormalFont 15
-#define tittleSelectedFont 18
+#define tittleSelectedFont 17
 
 @implementation KNTopMenuView
 
@@ -27,31 +27,24 @@
     CGFloat buttonWidth = self.scrollView.frame.size.width/5;
     self.scrollView.contentSize = CGSizeMake(buttonWidth * channelsArray.count, 0);
     for (NSInteger i = 0; i < channelsArray.count; i++) {
-        UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+        UIButton *button = [self createChannelButton];
         [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        [button setTitleColor:[UIColor colorWithRed:243/255.0 green:75/255.0 blue:80/255.0 alpha:1.0] forState:UIControlStateDisabled];
         [button.titleLabel setFont:[UIFont systemFontOfSize:tittleNormalFont]];
         [button addTarget:self action:@selector(channelButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
         [button layoutIfNeeded];
         [button setFrame:CGRectMake(i * buttonWidth, 0, buttonWidth, self.frame.size.height)];
         [button setTitle:channelsArray[i] forState:UIControlStateNormal];
-        [self.channelButtonArray addObject:button];
         [self.scrollView addSubview:button];
     }
     //默认选中第一个频道
-    [self channelButtonClicked:self.channelButtonArray[0]];
+    [self channelButtonClicked:self.scrollView.subviews[1]];
 }
 
-- (NSMutableArray *)channelButtonArray {
-    if (!_channelButtonArray) {
-        _channelButtonArray = [NSMutableArray array];
-    }
-    return _channelButtonArray;
-}
 #pragma mark --初始化子控件
 - (void)initialization {
     self.alpha = 0.9;
-    self.backgroundColor = [UIColor whiteColor];
+    self.backgroundColor = DEFAULT_BACKGROUND_COLOR;
+    
     [self createScrollView];
     
     [self createIndicatorView];
@@ -72,9 +65,10 @@
 
 - (void)createIndicatorView {
     UIView *view = [[UIView alloc] init];
+    view.frame = CGRectMake(0, self.frame.size.height - 2, self.scrollView.frame.size.width/5, 2);
     view.backgroundColor = DEFAULT_TABBAR_COLOR;
     self.indicatorView = view;
-    [self.scrollView addSubview:self.indicatorView];
+    [self.scrollView insertSubview:self.indicatorView atIndex:0];
 }
 
 - (void)createAddChannelButton {
@@ -97,7 +91,6 @@
 - (UIButton *)createChannelButton {
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-    [button setTitleColor:[UIColor colorWithRed:243/255.0 green:75/255.0 blue:80/255.0 alpha:1.0] forState:UIControlStateDisabled];
     [button.titleLabel setFont:[UIFont systemFontOfSize:tittleNormalFont]];
     [button addTarget:self action:@selector(channelButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
     [button layoutIfNeeded];
@@ -105,44 +98,49 @@
 }
 
 - (void)channelButtonClicked:(UIButton *)button {
+    self.currentSelectedButton.titleLabel.font = [UIFont systemFontOfSize:tittleNormalFont];
+    [self.currentSelectedButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    self.currentSelectedButton = button;
+    
     CGFloat newOffsetX = button.center.x - [UIScreen mainScreen].bounds.size.width*0.5;
-    if (newOffsetX < 0) {
-        newOffsetX = 0;
-    }
+
     if (newOffsetX > self.scrollView.contentSize.width - self.scrollView.frame.size.width) {
         newOffsetX = self.scrollView.contentSize.width - self.scrollView.frame.size.width;
     }
+    if (newOffsetX < 0) {
+        newOffsetX = 0;
+    }
+    [button.titleLabel setFont:[UIFont systemFontOfSize:tittleSelectedFont]];
+    [button setTitleColor:DEFAULT_TABBAR_COLOR forState:UIControlStateNormal];
+    [button layoutIfNeeded];
     [UIView animateWithDuration:0.25 animations:^{
-        [button.titleLabel setFont:[UIFont systemFontOfSize:tittleSelectedFont]];
-        [button layoutIfNeeded];
         [self.scrollView setContentOffset:CGPointMake(newOffsetX, 0)];
         CGPoint senderTittleNewPoint = [button.titleLabel.superview convertPoint:button.titleLabel.frame.origin toView:self.scrollView];
-        //indicatorView宽度会比titleLabel宽20，centerX与titleLabel相同
-        self.indicatorView.frame = CGRectMake(senderTittleNewPoint.x -10, self.frame.size.height - 2, button.titleLabel.frame.size.width + 20, 2);
+        //indicatorView宽度会比titleLabel宽10，centerX与titleLabel相同
+        self.indicatorView.frame = CGRectMake(senderTittleNewPoint.x - 5, self.frame.size.height - 2, button.titleLabel.frame.size.width + 10, 2);
     }];
     
     NSInteger index = [self.scrollView.subviews indexOfObject:button];
     if ([self.delegate respondsToSelector:@selector(chooseChannelWithIndex:)]) {
-        [self.delegate chooseChannelWithIndex:index];
+        [self.delegate chooseChannelWithIndex:index - 1];
     }
 }
 
 #pragma mark 选中某个ChannelButton
 - (void)selectChannelButtonWithIndex:(NSInteger)index {
-    [self channelButtonClicked:self.channelButtonArray[index]];
+    [self channelButtonClicked:self.scrollView.subviews[index + 1]];
 }
 
 #pragma mark 删除某个ChannelButton
 - (void)deleteChannelButtonWithIndex:(NSInteger)index {
     //删除index对应的button，
-    [self.scrollView.subviews[index] removeFromSuperview];
+    [self.scrollView.subviews[index + 1] removeFromSuperview];
     //后面的button的x向左移动buuton宽度的距离
-    for (NSInteger i = index; i<self.scrollView.subviews.count; i++) {
+    for (NSInteger i = index + 1; i < self.scrollView.subviews.count; i++) {
         UIButton *button = self.scrollView.subviews[i];
         CGRect buttonFrame = button.frame;
         button.frame = CGRectMake(buttonFrame.origin.x - button.frame.size.width, buttonFrame.origin.y, buttonFrame.size.width, buttonFrame.size.height);
     }
-    
     //将scrollView的contentSize减小一个buuton的宽度
     self.scrollView.contentSize = CGSizeMake(self.scrollView.contentSize.width - self.scrollView.frame.size.width/5, 0);
 }
@@ -172,6 +170,11 @@
         self.addChannelButton.selected = NO;
         self.indicatorView.hidden = NO;
         self.scrollView.hidden = NO;
+        if (self.scrollView.subviews.count == 1) {
+            self.indicatorView.hidden = YES;
+        } else {
+            self.indicatorView.hidden = NO;
+        }
     }
 }
 @end
