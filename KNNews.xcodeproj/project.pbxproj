@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A4EAF891CDE0480006F494B /* KNCommonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4EAF881CDE0480006F494B /* KNCommonTableViewCell.m */; };
+		0A4EAF901CDE0580006F494B /* KNInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4EAF8F1CDE0580006F494B /* KNInfoTableViewCell.m */; };
+		0AD150DA1CDE31DC000B0457 /* KNEditInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD150D91CDE31DC000B0457 /* KNEditInfoViewController.m */; };
+		0AD150DD1CDE486B000B0457 /* KNFeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AD150DC1CDE486B000B0457 /* KNFeedbackViewController.m */; };
 		AA3DCD301CDC32CD0012CF39 /* KNNewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3DCD2F1CDC32CD0012CF39 /* KNNewsTableViewController.m */; };
 		AA3DCD3D1CDC34470012CF39 /* KNHeaderNews.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3DCD3C1CDC34470012CF39 /* KNHeaderNews.m */; };
 		AA3DCD401CDC346B0012CF39 /* KNNormalNews.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3DCD3F1CDC346B0012CF39 /* KNNormalNews.m */; };
@@ -30,6 +34,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A4EAF871CDE0480006F494B /* KNCommonTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNCommonTableViewCell.h; sourceTree = "<group>"; };
+		0A4EAF881CDE0480006F494B /* KNCommonTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNCommonTableViewCell.m; sourceTree = "<group>"; };
+		0A4EAF8E1CDE0580006F494B /* KNInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNInfoTableViewCell.h; sourceTree = "<group>"; };
+		0A4EAF8F1CDE0580006F494B /* KNInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNInfoTableViewCell.m; sourceTree = "<group>"; };
+		0AD150D81CDE31DC000B0457 /* KNEditInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNEditInfoViewController.h; sourceTree = "<group>"; };
+		0AD150D91CDE31DC000B0457 /* KNEditInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNEditInfoViewController.m; sourceTree = "<group>"; };
+		0AD150DB1CDE486A000B0457 /* KNFeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNFeedbackViewController.h; sourceTree = "<group>"; };
+		0AD150DC1CDE486B000B0457 /* KNFeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNFeedbackViewController.m; sourceTree = "<group>"; };
 		AA3DCD2E1CDC32CD0012CF39 /* KNNewsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNNewsTableViewController.h; sourceTree = "<group>"; };
 		AA3DCD2F1CDC32CD0012CF39 /* KNNewsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KNNewsTableViewController.m; sourceTree = "<group>"; };
 		AA3DCD3B1CDC34470012CF39 /* KNHeaderNews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KNHeaderNews.h; sourceTree = "<group>"; };
@@ -84,6 +96,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A4EAF8D1CDE0580006F494B /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				0A4EAF8E1CDE0580006F494B /* KNInfoTableViewCell.h */,
+				0A4EAF8F1CDE0580006F494B /* KNInfoTableViewCell.m */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
 		AA3DCD311CDC33E10012CF39 /* Me */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,13 +144,6 @@
 			path = Video;
 			sourceTree = "<group>";
 		};
-		AA3DCD361CDC33F90012CF39 /* Me */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Me;
-			sourceTree = "<group>";
-		};
 		AA3DCD371CDC33F90012CF39 /* News */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +158,8 @@
 		AA3DCD381CDC33F90012CF39 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				0A4EAF871CDE0480006F494B /* KNCommonTableViewCell.h */,
+				0A4EAF881CDE0480006F494B /* KNCommonTableViewCell.m */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -266,7 +282,7 @@
 		AAC2E9EA1CDAEF93003E0EC9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				AA3DCD361CDC33F90012CF39 /* Me */,
+				0A4EAF8D1CDE0580006F494B /* Me */,
 				AA3DCD371CDC33F90012CF39 /* News */,
 				AA3DCD381CDC33F90012CF39 /* Other */,
 				AA3DCD391CDC33F90012CF39 /* Picture */,
@@ -280,6 +296,10 @@
 			children = (
 				AAC2E9FD1CDAFF9F003E0EC9 /* KNMeViewController.h */,
 				AAC2E9FE1CDAFF9F003E0EC9 /* KNMeViewController.m */,
+				0AD150D81CDE31DC000B0457 /* KNEditInfoViewController.h */,
+				0AD150D91CDE31DC000B0457 /* KNEditInfoViewController.m */,
+				0AD150DB1CDE486A000B0457 /* KNFeedbackViewController.h */,
+				0AD150DC1CDE486B000B0457 /* KNFeedbackViewController.m */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -392,16 +412,20 @@
 				AA3DCD4C1CDC6A6C0012CF39 /* KNTopMenuView.m in Sources */,
 				AAC2E9EB1CDAEF93003E0EC9 /* NSString+TL.m in Sources */,
 				AAC2E9F81CDAF162003E0EC9 /* KNNavigationController.m in Sources */,
+				0AD150DD1CDE486B000B0457 /* KNFeedbackViewController.m in Sources */,
 				AA3DCD461CDC43790012CF39 /* KNNewsDetailViewController.m in Sources */,
 				AAC2E9FF1CDAFF9F003E0EC9 /* KNMeViewController.m in Sources */,
+				0A4EAF891CDE0480006F494B /* KNCommonTableViewCell.m in Sources */,
 				AAC2E9F21CDAF111003E0EC9 /* KNViewController.m in Sources */,
 				AA3DCD3D1CDC34470012CF39 /* KNHeaderNews.m in Sources */,
 				AAC2EA021CDAFFB8003E0EC9 /* KNNewsViewController.m in Sources */,
+				0A4EAF901CDE0580006F494B /* KNInfoTableViewCell.m in Sources */,
 				AAC2EA051CDAFFCF003E0EC9 /* KNPictureViewController.m in Sources */,
 				AAC2E9ED1CDAEF93003E0EC9 /* UIImage+TL.m in Sources */,
 				AAC2E9EE1CDAEF93003E0EC9 /* UIView+TL.m in Sources */,
 				AAC2EA081CDAFFE1003E0EC9 /* KNVideoViewController.m in Sources */,
 				AAC2E9C61CDAEAE9003E0EC9 /* main.m in Sources */,
+				0AD150DA1CDE31DC000B0457 /* KNEditInfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,11 +518,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/KNNews/PrefixHeader.pch";
 				INFOPLIST_FILE = KNNews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kevin.KNNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -506,11 +533,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/KNNews/PrefixHeader.pch";
 				INFOPLIST_FILE = KNNews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kevin.KNNews;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

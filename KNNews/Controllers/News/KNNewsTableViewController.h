@@ -11,4 +11,5 @@
 @interface KNNewsTableViewController : UITableViewController
 
 @property (nonatomic, copy) NSString *channelName;
+
 @end

@@ -15,9 +15,24 @@
 
 @implementation AppDelegate
 
+-(void)setupUserDefaults {
+    NSString *userName = [[NSUserDefaults standardUserDefaults] stringForKey:@"userName"];
+    if (userName==nil) {
+        [[NSUserDefaults standardUserDefaults] setObject:@"KNNews" forKey:@"userName"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
+    
+    NSString *userSignature = [[NSUserDefaults standardUserDefaults] stringForKey:@"userSignature"];
+    if (userSignature==nil) {
+        [[NSUserDefaults standardUserDefaults] setObject:@"这个家伙很懒,什么也没有留下" forKey:@"userSignature"];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [self setupUserDefaults];
+    
     KNTabBarController *rootViewController = [[KNTabBarController alloc] init];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     [self.window setRootViewController:rootViewController];

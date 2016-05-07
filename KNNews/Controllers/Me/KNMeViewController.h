@@ -8,6 +8,8 @@
 
 #import "KNViewController.h"
 
-@interface KNMeViewController : KNViewController
+@interface KNMeViewController : KNViewController<UITableViewDelegate,UITableViewDataSource>
+
+@property (nonatomic, weak) UITableView *tableView;
 
 @end
